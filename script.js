@@ -18,11 +18,19 @@ addBtn.addEventListener("click", () => {
 
 function updateUi() {
   todosContainer.innerHTML = "";
+  todosContainer.style.color ="red";
+  todosContainer.style.fontSize='40px';
+  // todosContainer.style.font='bold';
+  todosContainer.style.fontFamily='fantasy';
+  todosContainer.style.textAlign='center';
+
   
 
   for (let i = 0; i < todos.length; i++) {
     const para = document.createElement("p");
     para.innerHTML = todos[i];
     todosContainer.append(para);
+    
+    
   }
 }
